@@ -1,0 +1,291 @@
+{
+  "note": "Actual backend calculation from the matching test fixture, not a live job or hiring prediction.",
+  "input": {
+    "resume": {
+      "name": "Alex Morgan",
+      "email": "alex@example.com",
+      "skills": ["ReactJS", "JS", "Node", "Postgres"],
+      "projects": [
+        "Built a React dashboard with Node.js REST APIs and PostgreSQL."
+      ],
+      "workExperience": [
+        "Software developer with 2 years of React and Node.js experience building web applications."
+      ],
+      "education": ["B.Sc. Computer Science - Example University"],
+      "certifications": [],
+      "achievements": []
+    },
+    "description": "Required skills:\nReact, JavaScript, Node.js, PostgreSQL, Docker\nPreferred skills:\nAWS\nResponsibilities:\nBuild web applications with React and Node.js REST APIs.\nRequirements:\n3 years experience with React required.\nBachelor degree in computer science required."
+  },
+  "parsedRequirements": {
+    "requiredSkills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "preferredSkills": ["AWS"],
+    "ambiguousSkills": ["REST APIs"],
+    "programmingLanguages": ["JavaScript"],
+    "frameworks": ["React"],
+    "toolsAndPlatforms": ["Node.js", "PostgreSQL", "Docker", "AWS"],
+    "education": [
+      {
+        "text": "Bachelor degree in computer science required.",
+        "degree": "bachelor",
+        "field": "computer science",
+        "required": true,
+        "evaluable": true
+      }
+    ],
+    "certifications": [],
+    "experience": [
+      {
+        "text": "3 years experience with React required.",
+        "minimumYears": 3,
+        "required": true,
+        "skills": ["React"]
+      }
+    ],
+    "responsibilities": [
+      "Build web applications with React and Node.js REST APIs."
+    ],
+    "skillEvidence": [
+      {
+        "skill": "JavaScript",
+        "classification": "required",
+        "text": "React, JavaScript, Node.js, PostgreSQL, Docker"
+      },
+      {
+        "skill": "React",
+        "classification": "required",
+        "text": "React, JavaScript, Node.js, PostgreSQL, Docker"
+      },
+      {
+        "skill": "Node.js",
+        "classification": "required",
+        "text": "React, JavaScript, Node.js, PostgreSQL, Docker"
+      },
+      {
+        "skill": "PostgreSQL",
+        "classification": "required",
+        "text": "React, JavaScript, Node.js, PostgreSQL, Docker"
+      },
+      {
+        "skill": "Docker",
+        "classification": "required",
+        "text": "React, JavaScript, Node.js, PostgreSQL, Docker"
+      },
+      {
+        "skill": "AWS",
+        "classification": "preferred",
+        "text": "AWS"
+      },
+      {
+        "skill": "React",
+        "classification": "ambiguous",
+        "text": "Build web applications with React and Node.js REST APIs."
+      },
+      {
+        "skill": "Node.js",
+        "classification": "ambiguous",
+        "text": "Build web applications with React and Node.js REST APIs."
+      },
+      {
+        "skill": "REST APIs",
+        "classification": "ambiguous",
+        "text": "Build web applications with React and Node.js REST APIs."
+      },
+      {
+        "skill": "React",
+        "classification": "required",
+        "text": "3 years experience with React required."
+      }
+    ],
+    "limitations": [
+      "Some skill mentions have no unambiguous required/preferred scope and were excluded from skill coverage.",
+      "Skill extraction uses a finite technology dictionary; unrecognized technologies and unrecognized qualifications may require manual review."
+    ]
+  },
+  "analysis": {
+    "overallScore": 63.08,
+    "componentScores": {
+      "requiredSkills": {
+        "score": 80,
+        "applicable": true,
+        "baseWeight": 35,
+        "effectiveWeight": 35,
+        "contribution": 28,
+        "explanation": "Exact canonical required skill coverage; absent evidence earns zero."
+      },
+      "experience": {
+        "score": 54.04,
+        "applicable": true,
+        "baseWeight": 25,
+        "effectiveWeight": 25,
+        "contribution": 13.51,
+        "explanation": "Average of best project/work text relevance and mandatory explicit-years coverage, where applicable."
+      },
+      "semantic": {
+        "score": 57.84,
+        "applicable": true,
+        "baseWeight": 20,
+        "effectiveWeight": 20,
+        "contribution": 11.57,
+        "explanation": "Local TF-IDF cosine similarity fallback; lexical overlap, not embedding-based semantic understanding."
+      },
+      "preferredSkills": {
+        "score": 0,
+        "applicable": true,
+        "baseWeight": 10,
+        "effectiveWeight": 10,
+        "contribution": 0,
+        "explanation": "Exact canonical preferred skill coverage."
+      },
+      "qualifications": {
+        "score": 100,
+        "applicable": true,
+        "baseWeight": 10,
+        "effectiveWeight": 10,
+        "contribution": 10,
+        "explanation": "Coverage of explicit degree levels/fields and recognized named certifications. Missing evidence earns zero."
+      }
+    },
+    "interpretation": "Good alignment",
+    "matchedSkills": {
+      "required": [
+        {
+          "skill": "JavaScript",
+          "evidence": [
+            {
+              "section": "skills",
+              "text": "JS"
+            }
+          ]
+        },
+        {
+          "skill": "React",
+          "evidence": [
+            {
+              "section": "skills",
+              "text": "ReactJS"
+            },
+            {
+              "section": "projects",
+              "text": "Built a React dashboard with Node.js REST APIs and PostgreSQL."
+            },
+            {
+              "section": "workExperience",
+              "text": "Software developer with 2 years of React and Node.js experience building web applications."
+            }
+          ]
+        },
+        {
+          "skill": "Node.js",
+          "evidence": [
+            {
+              "section": "skills",
+              "text": "Node"
+            },
+            {
+              "section": "projects",
+              "text": "Built a React dashboard with Node.js REST APIs and PostgreSQL."
+            },
+            {
+              "section": "workExperience",
+              "text": "Software developer with 2 years of React and Node.js experience building web applications."
+            }
+          ]
+        },
+        {
+          "skill": "PostgreSQL",
+          "evidence": [
+            {
+              "section": "skills",
+              "text": "Postgres"
+            },
+            {
+              "section": "projects",
+              "text": "Built a React dashboard with Node.js REST APIs and PostgreSQL."
+            }
+          ]
+        }
+      ],
+      "preferred": []
+    },
+    "missingSkills": {
+      "required": ["Docker"],
+      "preferred": ["AWS"]
+    },
+    "skillCoverage": {
+      "required": 80,
+      "preferred": 0
+    },
+    "relevantProjects": [
+      {
+        "section": "projects",
+        "text": "Built a React dashboard with Node.js REST APIs and PostgreSQL.",
+        "relevance": 41.42
+      }
+    ],
+    "relevantExperience": [
+      {
+        "section": "workExperience",
+        "text": "Software developer with 2 years of React and Node.js experience building web applications.",
+        "relevance": 31.07
+      }
+    ],
+    "experienceChecks": [
+      {
+        "requirement": "3 years experience with React required.",
+        "requiredYears": 3,
+        "demonstratedYears": 2,
+        "score": 66.66666666666666,
+        "evidence": [
+          "Software developer with 2 years of React and Node.js experience building web applications."
+        ],
+        "explanation": "Only explicitly stated years in saved work experience are counted; dates and project durations are not converted into tenure."
+      }
+    ],
+    "qualificationChecks": [
+      {
+        "requirement": "Bachelor degree in computer science required.",
+        "evaluable": true,
+        "matched": true,
+        "evidence": ["B.Sc. Computer Science - Example University"],
+        "explanation": "Degree level and any recognized explicit field must be demonstrated in saved education."
+      }
+    ],
+    "qualificationGaps": [],
+    "confidence": "low",
+    "limitations": [
+      "Some skill mentions have no unambiguous required/preferred scope and were excluded from skill coverage.",
+      "Skill extraction uses a finite technology dictionary; unrecognized technologies and unrecognized qualifications may require manual review.",
+      "Text overlap measures vocabulary relevance; it does not verify skills, tenure, seniority, or hiring suitability.",
+      "Embeddings are not configured; local TF-IDF fallback was used."
+    ],
+    "explanations": [
+      "Exact canonical required skill coverage; absent evidence earns zero.",
+      "Exact canonical preferred skill coverage.",
+      "Average of best project/work text relevance and mandatory explicit-years coverage, where applicable.",
+      "Local TF-IDF cosine similarity fallback; lexical overlap, not embedding-based semantic understanding.",
+      "Coverage of explicit degree levels/fields and recognized named certifications. Missing evidence earns zero."
+    ],
+    "semantic": {
+      "method": "tfidf-v1",
+      "model": null,
+      "localTfidfScore": 57.84,
+      "externalProcessingUsed": false
+    },
+    "algorithmVersion": "hybrid-v1:wcbaaa1d94f76:tfidf-v1",
+    "weights": {
+      "requiredSkills": 35,
+      "experience": 25,
+      "semantic": 20,
+      "preferredSkills": 10,
+      "qualifications": 10
+    },
+    "disclaimer": "Estimated resume-to-job alignment, not an official ATS score or hiring probability."
+  }
+}

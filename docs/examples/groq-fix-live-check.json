@@ -1,0 +1,44 @@
+{
+  "checkedOn": "2026-11-11",
+  "fictionalDataOnly": true,
+  "requestedModel": "auto",
+  "stages": [
+    {
+      "stage": "models",
+      "available": true,
+      "model": "openai/gpt-oss-20b"
+    },
+    {
+      "stage": "keywords",
+      "httpStatus": 201,
+      "durationMs": 1210,
+      "count": 6,
+      "categories": [
+        "supported",
+        "supported",
+        "supported",
+        "supported",
+        "skill_gap",
+        "skill_gap"
+      ]
+    },
+    {
+      "stage": "bullet",
+      "httpStatus": 201
+    },
+    {
+      "stage": "edit_and_accept",
+      "httpStatus": 200
+    },
+    {
+      "stage": "recalculate",
+      "httpStatus": 200,
+      "originalScore": 63.08,
+      "optimizedScore": 63.08,
+      "improvement": 0,
+      "algorithmUnchanged": true
+    }
+  ],
+  "resolvedModel": "openai/gpt-oss-20b",
+  "success": true
+}

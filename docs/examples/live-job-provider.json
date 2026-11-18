@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-11-03T16:11:04.612Z",
+  "source": "Jobicy",
+  "endpoint": "https://jobicy.com/api/jobs",
+  "mode": "live public provider; no resume data transmitted",
+  "validJobs": 300,
+  "skipped": 0,
+  "partialCoverage": true,
+  "samples": [
+    {
+      "externalId": "158644",
+      "title": "Senior/Lead Lifecycle Marketing Manager (Full Remote - Greece)",
+      "company": "EverAI",
+      "applicationUrl": "https://jobicy.com/jobs/158644-senior-lead-lifecycle-marketing-manager-full-remote-greece",
+      "postedAt": "2026-11-03T08:24:14.000Z",
+      "requiredSkills": [],
+      "descriptionLength": 7600
+    },
+    {
+      "externalId": "158643",
+      "title": "NetSuite Administrator",
+      "company": "Canonical",
+      "applicationUrl": "https://jobicy.com/jobs/158643-netsuite-administrator",
+      "postedAt": "2026-11-03T08:24:12.000Z",
+      "requiredSkills": [],
+      "descriptionLength": 4785
+    }
+  ]
+}

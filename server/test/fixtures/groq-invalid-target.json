@@ -1,0 +1,26 @@
+{
+  "suggestions": [
+    {
+      "keyword": "JavaScript",
+      "importance": "required",
+      "explanation": "Skill listed in required skills and present in resume.",
+      "requirement": "literal input requirement",
+      "evidenceIds": ["skills:0"],
+      "section": "skills",
+      "index": 0,
+      "suggestedText": "JavaScript",
+      "verificationStatus": "supported"
+    },
+    {
+      "keyword": "React",
+      "importance": "required",
+      "explanation": "Skill listed in required skills and present in resume.",
+      "requirement": "literal input requirement",
+      "evidenceIds": ["skills:1"],
+      "section": "skills",
+      "index": 1,
+      "suggestedText": "React",
+      "verificationStatus": "supported"
+    }
+  ]
+}
